@@ -21,6 +21,8 @@ Berdasarkan *website* tersebut, didapatkan sejumlah data yang berkaitan dengan p
 
 *Website* Olive Young Global dipilih dalam proyek ETL ini karena ketertarikan author terhadap *K-Beauty*, terutama *skincare*. Data-data yang diperoleh dari Olive Young Gloval dapat memberikan informasi tambahan terkait komposisi yang umumnya digunakan untuk suatu kondisi kulit pada kategori *skincare* tertentu.
 
+<br>
+
 ## Cara Menggunakan Scraper
 ### Prasyarat
 - Python 3.12 telah terinstal di sistem.
@@ -28,28 +30,30 @@ Berdasarkan *website* tersebut, didapatkan sejumlah data yang berkaitan dengan p
 - *Library* Python yang dibutuhkan telah terinstal. Instalasi dapat dilakukan dengan *run command* `pip install -r requirements.txt`
 - Buat sebuah file `.env` di *root* untuk menyimpan kredensial *database* dengan isi sebagai berikut:
 ```env
-DB_HOST=localhost
-DB_PORT=5432
-DB_NAME=nama_database_kamu
-DB_USER=username_postgres_kamu
-DB_PASS=password_postgres_kamu
+    DB_HOST=localhost
+    DB_PORT=5432
+    DB_NAME=nama_database_kamu
+    DB_USER=username_postgres_kamu
+    DB_PASS=password_postgres_kamu
 ```
 
 ### Langkah Eksekusi
 1. Lakukan *clone* terhadap repositori ini dengan command:
 ```
-git clone https://github.com/aucloire/OliveYoung-ETL-Seleksi-Lab-Basdat-2026.git
+    git clone https://github.com/aucloire/OliveYoung-ETL-Seleksi-Lab-Basdat-2026.git
 ```
 2. Buka terminal dan arahkan *directory* ke dalam folder `Data Scraping/src`.
 3. Jalankan *script scraper* dengan *command*: 
 ```
-python scraper.py
+    python scraper.py
 ```
 4. Tunggu hingga proses *scraping* selesai. *Script* akan otomatis melakukan *preprocessing* dan memecah data ke beberapa JSON.
 5. Untuk memasukkan data ke dalam *database*, jalankan *script* `loader.py` pada folder `Data Storing/src`.
 
 ### Output
 Hasil dari proses *scraping* yaitu 9 *file* JSON yang terpisah berdasarkan entitasnya. Seluruh *file* JSON ini akan secara otomatis tersimpan di dalam *directory* `Data Scraping/data`.
+
+<br>
 
 ## Struktur Data JSON
 - `products.json`
@@ -125,12 +129,18 @@ Hasil dari proses *scraping* yaitu 9 *file* JSON yang terpisah berdasarkan entit
     }
 ```
 
+<br>
+
 ## Desain Database (ERD & Relasional)
+Desain di bawah menggunakan *tools* dari [draw.io](draw.io). 
+
 1. ***Entity-Relationship Diagram* (ERD)**
 ![ERD](<Data Storing/design/ERD.png>)
 
 2. **Diagram Relasional**
 ![Relasional Diagram](<Data Storing/design/Relasional Diagram.png>)
+
+<br>
 
 ## Proses Translasi ERD ke Diagram Relasional
 1. **One-to-Many:**
@@ -148,6 +158,8 @@ Hasil dari proses *scraping* yaitu 9 *file* JSON yang terpisah berdasarkan entit
    - Product_Category(category_id) -> Categories(category_id)
    - Product_Concern(concern_id) -> Skin_Concerns(concern_id)
    - Product_Type(type_id) -> Skin_Types(type_id)
+
+<br>
 
 ## Screenshots Eksekusi Program
 - `products`
@@ -177,6 +189,7 @@ Hasil dari proses *scraping* yaitu 9 *file* JSON yang terpisah berdasarkan entit
 - `product_type`
 ![product_type](<Data Storing/screenshot/product_type.png>)
 
+> Eksekusi Program untuk Bonus Data Warehouse
 - `dim_product`
 ![dim_product](<Data Warehouse/screenshot/dwh-dim_product.png>)
 
@@ -185,6 +198,8 @@ Hasil dari proses *scraping* yaitu 9 *file* JSON yang terpisah berdasarkan entit
 
 - `fact_sku_metrics`
 ![fact_sku_metrics](<Data Warehouse/screenshot/dwh-fact_sku_metrics.png>)
+
+<br>
 
 ## Dokumentasi Bonus
 ### Bonus 1: Data Warehouse
@@ -259,11 +274,47 @@ oliveyoung_db=# select product_id, clean_name, brand, batch_timestamp from produ
 | GA260338900 | ROUND LAB Sensitive Skin Calming Routine | ROUND LAB | 2026-07-23 17:32:47 |
 | GA260136963 |  makeprem Inteca For Men Soothing All-In-One | makeprem | 2026-07-23 12:36:05 |
 | GA250832687 | Arencia Holy Hyssop Serum 30 | Arencia | 2026-07-23 12:36:05 |
+> Automated scheduling dicoba dengan melakukan pembatasan terhadap scraping ke 3 produk untuk mempercepat proses testing dan menunjukkan perbedaan di database.
 
 Setiap kali *scheduler* berjalan, sistem secara otomatis membuat *file log* berbasis *timestamp* yang bisa dilihat di *directory* `logs/` dengan format `etl_pipeline_YYYYMMDD_HHMMSS.log`. *File* tersebut merekam seluruh proses ETL *pipeline*, mulai dari *scraping*, pemuatan data OLTP, hingga pembaruan *Data Warehouse* (OLAP) untuk memudahkan proses *debugging* dan audit.
 
 ### Bonus 3: Optimasi Query
-Terdapat 3 *query* yang telah dioptimasi untuk meningkatkan performa *query* pada *database* relasional. Penjelasan terkait bonus ini dapat dilihat pada *directory* `Query Optimasi/README.md`.
+Bonus ini dikerjakan dengan terlebih dahulu menentukan 3 informasi yang ingin didapatkan dari `oliveyoung_db`. Selanjutnya, dilakukan `EXPLAIN ANALYZE` terhadap query yang dihasilkan untuk kemudian menganalisis hal-hal yang perlu dioptimasi.
+
+#### 1. Informasi 1: Analisis Produk Hypoallergenic
+Query ini bertujuan untuk mencari daftar nama skincare kategori **Cream** yang cocok untuk tipe kulit **Sensitif** dengan memastikan bahwa skincare tersebut bebas dari komposisi pemicu iritasi, biasanya *fragrance* atau *alcohol*.
+
+Sebelum:
+![Sebelum](<Query Optimasi/screenshot/informasi1-explainanalyze-before.png>)
+
+**Strategi Optimasi:** Penerapan B-Tree Indexing pada relasi yang terlibat, seperti Ingredients, SKUs, dan Product_Category untuk menghilangkan sequential scan, sehingga menurunkan execution time.
+
+Sesudah:
+![Sesudah](<Query Optimasi/screenshot/informasi1-explainanalyze-after.png>)
+
+#### 2. Informasi 2: Analisis Produk untuk 3 Skin Concern Spesifik
+Query ini bertujuan untuk mencari produk yang mampu menangani 3 masalah kulit sekaligus, misalnya **Blackheads, Visible Pores, dan Well-aging**. Selain itu, query ini juga akan menampilkan harga jualnya.
+
+Sebelum: 
+![sebelum](<Query Optimasi/screenshot/informasi2-explainanalyze-before.png>)
+
+**Strategi Optimasi:** Melakukan query tuning untuk menghilangkan multiple subqueries menggunakan metode HAVING COUNT sehingga database engine hanya perlu melakukan 1 kali hash join.
+
+Sesudah:
+![sesudah](<Query Optimasi/screenshot/informasi2-explainanalyze-after.png>)
+
+#### 3. Informasi 3: Analisis Komposisi Populer
+Query ini bertujuan untuk menganalisis bahan kimia yang paling sering digunakan pada skincare **Essence & Serum** yang menargetkan masalah kulit **Well-aging** dengan menghilangkan base ingredients dari daftar.
+
+Sebelum:
+![sebelum](<Query Optimasi/screenshot/informasi3-explainanalyze-before.png>)
+
+**Strategi Optimasi:** Menggunakan composite index untuk menurunkan total cost melalui index only scan.
+
+Sesudah:
+![sesudah](<Query Optimasi/screenshot/informasi3-explainanalyze-after.png>)
+
+<br>
 
 ## Transparansi Penggunaan AI
 1. **Bagian yang dibantu AI:** 
@@ -279,19 +330,20 @@ Terdapat 3 *query* yang telah dioptimasi untuk meningkatkan performa *query* pad
    - Pengerjaan Bonus 3 Query Optimasi
 
 3. **Refleksi dari penggunaan AI:** 
-   Penggunaan AI sangat membantu dalam mempercepat penyelesaian tugas dan *solving* masalah teknis, seperti melakukan *debugging* dan menyederhanakan logika kode. Namun, saya menyadari bahwa AI bertindak hanya sebagai sebuah asisten. Fondasi pemahaman terkait *database modelling*, penyusunan arsitektur, serta alur logika ekstraksi data tetap harus berasal ddari pemikiran *author* sendiri agar sistem yang dibangun terstruktur dengan benar dan dapat dipertanggungjawabkan.
+   Penggunaan AI sangat membantu dalam mempercepat penyelesaian tugas dan *solving* masalah teknis, seperti melakukan *debugging* dan menyederhanakan logika kode. Namun, saya menyadari bahwa AI bertindak hanya sebagai sebuah asisten. Fondasi pemahaman terkait *database modelling*, penyusunan arsitektur, serta alur logika ekstraksi data tetap harus berasal ddari pemikiran *author* sendiri agar sistem yang dibangun terstruktur dengan benar dan dapat dipertanggungjawabkan. Melalui project ini, author kembali sadar bahwa setiap keputusan bukan dibuat oleh AI, melainkan oleh manusia.
 
+<br>
 
 ## Referensi
 **Sumber Data:** [Olive Young Global](https://global.oliveyoung.com)
 
-**Library/Tools:**
-[Python 3.12.13 Documentation](https://docs.python.org/id/3.12/index.html)
-[PostgreSQL 18 Documentation](https://www.postgresql.org/docs/18/index.html)
-[Selenium with Python Documentation](https://selenium-python.readthedocs.io/)
-[Psycopg 2 Documentation](https://www.psycopg.org/docs/)
+**Library/Tools:**<br>
+[Python 3.12.13 Documentation](https://docs.python.org/id/3.12/index.html)<br>
+[PostgreSQL 18 Documentation](https://www.postgresql.org/docs/18/index.html)<br>
+[Selenium with Python Documentation](https://selenium-python.readthedocs.io/)<br>
+[Psycopg 2 Documentation](https://www.psycopg.org/docs/)<br>
 [uuid6 Documentation](https://pypi.org/project/uuid6/)
 
-**Tutorials:**
-[Use Cases of XPath Python In Selenium With Examples](https://www.testmuai.com/blog/python-xpath/)
-[Automating an ETL Pipeline with Windows Task Scheduler](https://innerjoin.bit.io/automating-an-etl-pipeline-with-windows-task-scheduler-ef069c63fc35?sharedUserId=ellainejh)
+**Tutorials:**<br>
+[Use Cases of XPath Python In Selenium With Examples](https://www.testmuai.com/blog/python-xpath/)<br>
+[Automating an ETL Pipeline with Windows Task Scheduler](https://innerjoin.bit.io/automating-an-etl-pipeline-with-windows-task-scheduler-ef069c63fc35?sharedUserId=ellainejh)<br>
