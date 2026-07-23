@@ -1,0 +1,6 @@
+selenium
+webdriver-manager
+uuid
+uuid6
+psycopg2-binary
+python-dotenv
