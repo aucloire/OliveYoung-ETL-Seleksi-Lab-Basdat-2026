@@ -1,75 +1,289 @@
 <h1 align="center">
   <br>
-  Seleksi Warga Basdat 2026 <br>
-  ETL Project
+  Olive Young Global Web Scraping Project
   <br>
   <br>
 </h1>
 
 <h2 align="left">
   <br>
-  Singkatnya?
+  Author
   <br>
 </h2>
-Pada tahap seleksi ini, peserta akan diminta untuk melakukan proses ETL yang meliputi data scraping, database modeling, dan data storing terkait sebuah topik yang dibebaskan kepada peserta. Peserta juga diminta untuk merancang sebuah model ERD dan model relasional yang akan diimplementasikan untuk menyimpan hasil proses data scraping sebelumnya. Tahap seleksi ini menguji kemampuan peserta untuk mengumpulkan data, merancang sebuah database, dan merealisasikan rancangan tersebut menjadi sebuah database relasional yang fungsional.
+Name: Ellaine Juvina <br>
+NIM : 18224071
   <br>
 
-## Step 1: Data Scraping
-1. Pilih sebuah topik yang akan kalian jadikan sebagai tema pada seleksi _data scraping_ Anda. Daftarkan topik tersebut ke dalam spreadsheet berikut:
-[Daftar Topik Seleksi Asisten Lab Basis Data 2026](https://docs.google.com/spreadsheets/d/1cowSMPtWQApyALrypfMBJSOuqbXyGh2cCaDXKRs8fD4/edit?usp=sharing)
-    - Usahakan agar tidak ada dua atau lebih peserta dengan topik yang sama
-    - First come, first served. Bila ada dua atau lebih peserta dengan topik yang sama, peserta dengan topik yang sudah terdaftar duluan (berada di atas) akan diprioritaskan.
-    - Akses edit ke _spreadsheet_ topik data scraping akan ditutup pada tanggal **25 Juli pukul 20:40 WIB**
-2. Lakukan _data scraping_ dari sebuah _web page_ untuk memperoleh data dan informasi sesuai dengan topik yang telah dipilih oleh masing-masing peserta. 
-    - Data dan informasi yang diperoleh akan digunakan di _step_ berikutnya sebagai data yang akan disimpan di dalam sebuah RDBMS
-    - Peserta **DILARANG** menggunakan API untuk melakukan proses data scraping
-3. Pada folder `Data Scraping`, peserta harus mengumpulkan file _script_ dan file JSON hasil _scraping_ yang telah dilakukan
-    - Folder `src` berisi _script_/_code_ yang telah digunakan untuk _scraping_. Pastikan bahwa _script_/_code_ yang kalian bua bersifat well documented dan clean. 
-    - Folder `data` berisi semua data dan informasi yang berhasil kalian scrape dalam bentu JSON. Peserta diperbolehkan untuk memisahkan hasil _scraping_ ke dalam file-file yang berbeda ataupun digabung dalam satu file yang besar. Yang penting sesuai dengan output dari _script_ _data scraping_ yang digunakan
-    - Folder `screenshot` berisi tangkapan layar dari _script/code_ yang kalian gunakan untuk _data scraping_. Pastikan tangkapan layar dapat dibaca dengan jelas
-4. Sebagai referensi untuk mempelajari dan mengenal _data scraping_, asisten telah menyiapkan dokumen panduan singkat pada link berikut: Panduan Singkat Data Scraping
-    - Dokumen tersebut hanya merupakan panduan bagi peserta. Metodologi _data scraping_ yang digunakan oleh peserta seleksi basdat dibebaskan (asal sesuai peraturan)
-    - Perhatikan dan peragakan etika _data scraping_ yang baik dalam pelaksanaan seleksi ini
-5. Syarat data yang diperoleh dari proses data scraping: Data yang diperoleh harus di-_preprocessing_ terlebih dahulu
-    - Beberapa contoh _preprocessing_:
-        - Cleaning
-        - Parsing
-        - Transformation
-        - Dll
-    - Preprocessing dilakukan untuk memastikan data yang diterima tidak sepenuh-penuhnya mentah dan tidak dapat dipahami dengan mudah
-  
+## Deskripsi Singkat
+Olive Young adalah ritel kosmetik, kesehatan, dan kecantikan nomor 1 di Korea Selatan. Kini, Olive Young telah tersedia di e-commerce internasional, yaitu [Olive Young Global](https://global.oliveyoung.com).
 
-## Step 2: Data Modeling + Data Storing
-1. Dari hasil proses _data scraping_ yang telah dilakukan, lakukan perancangan _database_ dalam bentuk **ERD**. Sertakan asumsi dan penjelasan di dalam desain ERD-nya bila diperlukan
-2. Translasikan hasil desain ERD tersebut ke dalam bentuk diagram relasional. Peserta dipersilahkan untuk menambahkan tabel lain yang sekiranya relevan atau berkaitan dengan tabel-tabel yang murni didapatkan dari proses _data scraping_.
-3. Implementasikan skema diagram relasional tersebut ke dalam RDBMS sesuai pilihan peserta (PostgreSQL, mariaDB, etc). Peserta **dilarang** untuk menggunakan DBMS no-SQL
-    - Jangan lupa untuk mengimplementasikan _constraints_ ke dalam _database_ (primary key, foreign key, trigger, dll)
-4. Setelah _database_-nya telah diimplementasikan, masukkan data yang didapatkan dari proses _scraping_ ke dalam RDBMS yang telah dibuat
-    - Tabel tambahan yang dibuat pada poin 2 tidak perlu diisi dengan data (baik data _dummy_ maupun data asli). Cukup dibiarkan kosong
-5. Tools yang digunakan dibebaskan kepada peserta
-6. Pada folder `Data Storing`, peserta harus mengumpulkan bukti penyimpanan data pada DBMS. Folder `Data Storing` terdiri dari folder `design`, `export`, dan `screenshots`.
-    - Folder `design` berisi gambar ERD dan gambar diagram relasional dari _database_ yang kalian rancang. Format file yang diterima adalah **.png**
-    - Folder `src` berisi script/code yang telah digunakan untuk storing. Pastikan bahwa script/code yang kalian bua bersifat well documented dan clean. 
-    - Folder `export` berisi file hasil _export_ dari DBMS dengan format **.sql**
-    - Folder `screenshots` berisi tangkapan layar bukti dari penyimpanan data ke dalam RDBMS (Query SELECT FROM WHERE pada RDBMS)
+Berdasarkan *website* tersebut, didapatkan sejumlah data yang berkaitan dengan produk-produk *skincare* yang dijual di *e-commerce* tersebut, seperti produk, *brand*, harga, deskripsi, dan komposisi.
 
-## Bonus:
-Task-task berikut merupakan bonus yang **TIDAK WAJIB** dilakukan oleh peserta seleksi. Penyelesaian satu atau lebih dari task bonus akan membawa nilai tambahan bagi peserta yang menyelesaikannya. Peserta dibolehkan untuk mengerjakan sebagian atau seluruh dari task bonus yang tersedia
-1. Buatlah perancangan dan implementasi data warehouse berdasarkan data yang diperoleh dari proses data scraping. Rancanglah skema yang diperlukan untuk fact table dan dimension table (misalnya menggunakan pendekatan star schema atau snowflake schema) untuk mendukung kebutuhan analitik. Sertakan struktur skema data warehouse yang digunakan beserta contoh query analitik yang bisa dijalankan terhadap data tersebut. 
-2. Lakukan automated scheduling untuk keseluruhan proses, sehingga data dapat di-update secara berkala. Pastikan tidak terdapat redundansi data pada DBMS. Jika mengerjakan bonus ini, jelaskan pada README dan cantumkan pada data waktu pelaksanaan scheduling, misalnya dengan menunjukkan perbedaan timestamp ekstraksi antara data pada batch pertama dan data pada batch kedua
+*Website* Olive Young Global dipilih dalam proyek ETL ini karena ketertarikan author terhadap *K-Beauty*, terutama *skincare*. Data-data yang diperoleh dari Olive Young Gloval dapat memberikan informasi tambahan terkait komposisi yang umumnya digunakan untuk suatu kondisi kulit pada kategori *skincare* tertentu.
+
+## Cara Menggunakan Scraper
+### Prasyarat
+- Python 3.12 telah terinstal di sistem.
+- RDBMS PostgreSQL telah terinstal dan berjalan. Buat sebuah *database* baru dengan nama oliveyoung_db dan jalankan *script* DDL yang berada di `Data Storing/src/schema.sql`.
+- *Library* Python yang dibutuhkan telah terinstal. Instalasi dapat dilakukan dengan *run command* `pip install -r requirements.txt`
+- Buat sebuah file `.env` di *root* untuk menyimpan kredensial *database* dengan isi sebagai berikut:
+```env
+DB_HOST=localhost
+DB_PORT=5432
+DB_NAME=nama_database_kamu
+DB_USER=username_postgres_kamu
+DB_PASS=password_postgres_kamu
+```
+
+### Langkah Eksekusi
+1. Lakukan *clone* terhadap repositori ini dengan command `git clone <link repository ini>`.
+2. Buka terminal dan arahkan *directory* ke dalam folder `Data Scraping/src`.
+3. Jalankan *script scraper* dengan *command* `python scraper.py`.
+4. Tunggu hingga proses *scraping* selesai. *Script* akan otomatis melakukan *preprocessing* dan memecah data ke beberapa JSON.
+5. Untuk memasukkan data ke dalam *database*, jalankan *script* `loader.py` pada folder `Data Storing/src`.
+
+### Output
+Hasil dari proses *scraping* yaitu 9 *file* JSON yang terpisah berdasarkan entitasnya. Seluruh *file* JSON ini akan secara otomatis tersimpan di dalam *directory* `Data Scraping/data`.
+
+## Struktur Data JSON
+- `products.json`
+```
+    {
+        "product_id": "GA240121573",
+        "clean_name": "AESTURA Atobarrier 365 Cream",
+        "brand": "AESTURA",
+        "why_we_love_it": "Enhanced barrier hydration with high-density ceramides specialized for sensitive skin. It is an evolved product with high-density ceramides specialized for sensitive skin. Sensitive skin requires long and dense high-density ceramides.",
+        "featured_ingredients_desc": "It is a product that contains second-generation moisturizing capsules fortified with high-density ceramides. Through 40 years of painstaking research on sensitive skin, we have thoroughly verified the length, type, absorption, and retention of ceramides to create a denser moisturizing capsule. We upgraded the short and inadequate ceramides of sensitive skin to a denser and more robust structure and included long-chain ceramides and linker ceramides that connect them. Artificial fragrance-free, synthetic colorant-free, 9 FREE products.",
+        "how_to_use": "After cleansing in the morning and evening, apply an appropriate amount evenly to the skin and absorb."
+    }
+```
+- `skus.json`
+```
+    {
+        "sku_id": "019f8a17-5440-70d9-88f0-c8ec9c022cd6",
+        "product_id": "GA250127893",
+        "original_sku_name": "SKIN1004 Madagascar Centella Ampoule 100ml",
+        "original_price": 22.0,
+        "sale_price": 18.7
+    }
+```
+- `ingredients.json` 
+```
+    {
+        "ingredient_id": "019f89ad-c79b-7947-8084-dec0828e4c8b",
+        "sku_id": "019f89ad-baa4-724d-93ee-b9e345427d2d",
+        "liquid_variant": "Fresh Green Cleanser",
+        "ingredient_name": "Camellia Sinensis Leaf Powder"
+    }
+```
+- `categories.json`
+```
+    {
+        "category_id": "019f89a3-e372-7f12-8796-9c4eae1e650d",
+        "category_name": "Toner"
+    }
+```
+- `skin_concerns.json`
+```
+    {
+        "concern_id": "019f89a3-e379-7461-a812-0dbbd2b9ca12",
+        "concern_name": "Moisturising"
+    }
+```
+- `skin_types.json` 
+```
+    {
+        "type_id": "019f89a3-e37d-7d41-960d-3da1f4feb20b",
+        "type_name": "Combination&Normal"
+    }
+```
+- `product_category.json`
+```
+    {
+        "product_id": "GA230819791",
+        "category_id": "019f89a3-e372-7f12-8796-9c4eae1e650d"
+    }
+```
+- `product_concern.json` 
+```
+    {
+        "product_id": "GA240724586",
+        "concern_id": "019f89a3-e376-751d-930d-90d2e699071a"
+    }
+```
+- `product_type.json`
+```
+    {
+        "product_id": "GA250127641",
+        "type_id": "019f89a3-e37d-7d41-960d-3da1f4feb20b"
+    }
+```
+
+## Desain Database (ERD & Relasional)
+1. ***Entity-Relationship Diagram* (ERD)**
+![ERD](<Data Storing/design/ERD.png>)
+
+2. **Diagram Relasional**
+![Relasional Diagram](<Data Storing/design/Relasional Diagram.png>)
+
+## Proses Translasi ERD ke Diagram Relasional
+1. **One-to-Many:**
+  Hubungan *one-to-many* (1:M) antara SKUs-Ingredients dan Products-SKUs akan menghasilkan *foreign key* yang tersimpan di entitas dengan *cardinality **many*** yang me-*reference* ke entitas dengan *cardinality **one***.
+
+2. **Many-to-Many:**
+  Hubungan *many-to-many* (M:N) antara Products dengan Categories, Skin_Concerns, dan Skin_Types akan menghasilkan sebuah relasi baru yang menyimpan *primary key* dari kedua entitas terkait sebagai *foreign key* untuk dijadikan juga *composite primary key* pada relasi baru tersebut.
+
+3. **Foreign Key References:**
+   - Ingredients(sku_id) -> SKUs(sku_id)
+   - SKUs(product_id) -> Products(product_id)
+   - Product_Category(product_id) -> Products(product_id)
+   - Product_Concern(product_id) -> Products(product_id)
+   - Product_Type(product_id) -> Products(product_id)
+   - Product_Category(category_id) -> Categories(category_id)
+   - Product_Concern(concern_id) -> Skin_Concerns(concern_id)
+   - Product_Type(type_id) -> Skin_Types(type_id)
+
+## Screenshots Eksekusi Program
+- `products`
+![products](<Data Storing/screenshot/products.png>)
+
+- `skus`
+![skus](<Data Storing/screenshot/skus.png>)
+
+- `ingredients` 
+![ingredients](<Data Storing/screenshot/ingredients.png>)
+
+- `categories`
+![categories](<Data Storing/screenshot/categories.png>)
+
+- `skin_concerns`
+![skin_concerns](<Data Storing/screenshot/skin_concerns.png>)
+
+- `skin_types` 
+![skin_types](<Data Storing/screenshot/skin_types.png>)
+
+- `product_category`
+![product_category](<Data Storing/screenshot/product_category.png>)
+
+- `product_concern` 
+![product_concern](<Data Storing/screenshot/product_concern.png>)
+
+- `product_type`
+![product_type](<Data Storing/screenshot/product_type.png>)
+
+- `dim_product`
+![dim_product](<Data Warehouse/screenshot/dwh-dim_product.png>)
+
+- `dim_date`
+![dim_date](<Data Warehouse/screenshot/dwh-dim_date.png>)
+
+- `fact_sku_metrics`
+![fact_sku_metrics](<Data Warehouse/screenshot/dwh-fact_sku_metrics.png>)
+
+## Dokumentasi Bonus
+### Bonus 1: Data Warehouse
+Arsitektur *Data Warehouse* (OLAP) dirancang dengan ***Star Schema***. Pendekatan ini dipilih untuk mengurangi operasi `JOIN` yang kompleks saat melakukan *query* analitik, sehingga performa pembacaan data menjadi jauh lebih efisien.
+
+Tabel dengan relasi *many-to-many* dari oliveyoung_db, seperti Categories, Skin_Concerns, dan Skin_Types, didenormalisasi menjadi teks gabungan di tabel dimensi, dan diagregrasi menjadi nilai *count* di *fact table*.
+
+#### Komponen Star Schema
+1. ***Fact Table* (`fact_sku_metrics`)** menyimpan nilai kuantitatif hasil transaksi/ekstraksi, seperti harga, persenan diskon, banyak komposisi dalam produk, dan jumlah kategori/masalah/tipe kulit.
+2. ***Dimension Table***
+   - `dim_product` menyimpan atribut yang bersifat deskriptif dari suatu produk, seperti brand, nama produk, dll.
+   - `dim_date` menyimpan atribut tanggal yang diesktrak dari `batch_timestamp` untuk analisis yang bersifat *time-series*.
+
+#### Desain ERD & Star Schema Data Warehouse
+1. ERD Data Warehouse
+![ERD DWH](<Data Warehouse/design/dwh_ERD.png>)
+
+2. Diagram Relasional (Star Schema) Data Warehouse
+![Star Schema](<Data Warehouse/design/Star Schema.png>)
+
+#### Query Analitik
+1. Analisis Masalah Kulit dengan Harga Produk Skincare
+```
+    WITH unnested_concerns AS (
+        SELECT 
+            TRIM(UNNEST(string_to_array(dp.skin_concern_list, ','))) AS individual_skin_concern,
+            f.sale_price,
+            f.discount_amount
+        FROM dwh.fact_sku_metrics AS f
+        JOIN dwh.dim_product AS dp ON f.product_id = dp.product_id
+        WHERE dp.skin_concern_list IS NOT NULL
+    )
+    SELECT 
+        individual_skin_concern,
+        COUNT(*) AS product_count,
+        ROUND(AVG(sale_price), 2) AS average_sale_price,
+        ROUND(AVG(discount_amount), 2) AS average_discount
+    FROM unnested_concerns
+    GROUP BY individual_skin_concern
+    HAVING AVG(discount_amount) > 15
+    ORDER BY average_sale_price DESC
+    LIMIT 3;
+```
+
+2. Analisis Brand vs Diskon
+```
+    SELECT 
+        dp.brand,
+        COUNT(f.sku_id) AS total_skus,
+        ROUND(AVG(f.discount_amount), 2) AS avg_brand_discount,
+        ROUND(AVG(f.ingredient_count), 0) AS avg_ingredients,
+        ROUND(AVG(f.discount_amount) - AVG(AVG(f.discount_amount)) OVER (), 2) AS discount_diff_from_market,
+        RANK() OVER (ORDER BY AVG(f.discount_amount) DESC) AS discount_strategy_rank
+    FROM dwh.fact_sku_metrics AS f
+    JOIN dwh.dim_product AS dp ON f.product_id = dp.product_id
+    GROUP BY dp.brand
+    HAVING COUNT(f.sku_id) > 5
+    ORDER BY discount_strategy_rank;
+```
+
+### Bonus 2: Automated Scheduling
+*Automated scheduling* diimpplementasikan menggunakan OS Scheduler, seperti Task Scheduler pada Windows, yang menjalankan *wrapper script* `run_etl.bat` setiap hari pada jam tertentu. Sistem ini mengamankan *idempotency* menggunakan klausa ON CONFLICT pada metode `_bulk_insert()` di PostgreSQL untuk memastikan tidak ada redundansi data. Perbedaan antarsiklus dapat dilihat dari kolom `batch_timestamp` di tabel `Products`
+```
+oliveyoung_db=# select product_id, clean_name, brand, batch_timestamp from products order by batch_timestamp desc limit 5;
+```
+| product_id | clean_name | brand | batch_timestamp |
+| :--- | :--- | :--- | :--- |
+| GA230217695 | AMPLE:N Ceramide Shot Ampoule | AMPLE:N | 2026-07-23 17:33:31 |
+| GA260439734 | Anua PDRN Hyaluronic Capsule 100 Serum | Anua | 2026-07-23 17:33:09 |
+| GA260338900 | ROUND LAB Sensitive Skin Calming Routine | ROUND LAB | 2026-07-23 17:32:47 |
+| GA260136963 |  makeprem Inteca For Men Soothing All-In-One | makeprem | 2026-07-23 12:36:05.651349 |
+| GA250832687 | Arencia Holy Hyssop Serum 30 | Arencia | 2026-07-23 12:36:05.651349 |
+
+Setiap kali *scheduler* berjalan, sistem secara otomatis membuat *file log* berbasis *timestamp* yang bisa dilihat di *directory* `logs/` dengan format `etl_pipeline_YYYYMMDD_HHMMSS.log`. *File* tersebut merekam seluruh proses ETL *pipeline*, mulai dari *scraping*, pemuatan data OLTP, hingga pembaruan *Data Warehouse* (OLAP) untuk memudahkan proses *debugging* dan audit.
+
+### Bonus 3: Optimasi Query
+Terdapat 3 *query* yang telah dioptimasi untuk meningkatkan performa *query* pada *database* relasional. Penjelasan terkait bonus ini dapat dilihat pada *directory* `Query Optimasi/README.md`.
+
+## Transparansi Penggunaan AI
+1. **Bagian yang dibantu AI:** 
+   - Pengerjaan Step 1 Data Scraping, yaitu *algorithm refinement* untuk menyederhanakan *script* dan *bug solving*. 
+   - Pengerjaan Step 2 Data Storing, yaitu pembuatan `loader.py`
+   - Pengerjaan Bonus 1 Data Warehouse, yaitu perencanaan data warehouse dan pembuatan `dwh_loader.py`
+   - Pengerjaan Bonus 2 Automated Scheduling, yaitu pembuatan `run_etl.bat` dan `run_etl.sh`, serta *step-by-step* dalam mengerjakan bonus.
+   
+2. **Bagian yang dikerjakan sendiri:**
+   - Pengerjaan Step 1 Data Scraping, yaitu penentuan topik dan *data source*, penentuan *library/framework* yang digunakan, data yang diambil, *inspect website* untuk mengambil *endpoint/xpath list* untuk dipakai di `scraper.py`, dan penentuan *preprocessing* yang harus dilakukan.
+   - Pengerjaan Step 2 Data Modelling dan Data Storing, yaitu memodelkan ERD, Diagram Relasional, pembuatan `Data Storing/src/schema.sql` untuk RDBMS, dan implementasi *constraints* (*primary key, foreign key, trigger, dll.*).
+   - Pengerjaan Bonus 1 Data Warehouse, yaitu penentuan data numerik yang ingin diambil, query analitik, perancangan ERD dan translasi ke relasional, pembuatan asumsi ERD
+   - Pengerjaan Bonus 3 Query Optimasi
+
+3. **Refleksi dari penggunaan AI:** 
+   Penggunaan AI sangat membantu dalam mempercepat penyelesaian tugas dan *solving* masalah teknis, seperti melakukan *debugging* dan menyederhanakan logika kode. Namun, saya menyadari bahwa AI bertindak hanya sebagai sebuah asisten. Fondasi pemahaman terkait *database modelling*, penyusunan arsitektur, serta alur logika ekstraksi data tetap harus berasal ddari pemikiran *author* sendiri agar sistem yang dibangun terstruktur dengan benar dan dapat dipertanggungjawabkan.
 
 
-# Pengumpulan
-1. Peserta diwajibkan untuk melakukan _fork_ terhadap project [GitHub Seleksi Lab Basdat 2026](https://github.com/wargabasdat/Seleksi-2026-Tugas-1). Peserta harus melakukan _pull request_ dengan nama **TUGAS_SELEKSI_1_[NIM]** sebelum tenggat waktu yang telah ditetapkan
-2. Tambahkan **.gitignore** pada _file_ atau _folder_ yang tidak perlu di-upload. NB: Binary tidak perlu di-upload
-3. Sertakan file **README** yang memuat:
-    - Author (Nama dan NIM)
-    - Deskripsi singkat mengenai data dan DBMS yang telah dibuat + mengapa kalian memilih topik tersebut
-    - Cara menggunakan scraper yang telah dibuat dan menggunakan hasil output-nya
-    - Penjelasan struktur dari file JSON yang dihasilkan scraper
-    - Struktur ERD dan diagram relasional RDBMS
-    - Penjelasan mengenai proses translasi ERD menjadi diagram relasional
-    - Beberapa screenshot dari program yang dijalankan (image di-upload sesuai folder-folder yang tersedia, di README tinggal ditampilkan)
-    - Referensi (library yang digunakan, link halaman web yang di-scrape, etc)
-  
-# DEADLINE PENGUMPULAN ADALAH TANGGAL 23 Juli 2026, PUKUL 22:40
+## Referensi
+**Sumber Data:** [Olive Young Global](https://global.oliveyoung.com)
+
+**Library/Tools:**
+[Python 3.12.13 Documentation](https://docs.python.org/id/3.12/index.html)
+[PostgreSQL 18 Documentation](https://www.postgresql.org/docs/18/index.html)
+[Selenium with Python Documentation](https://selenium-python.readthedocs.io/)
+[Psycopg 2 Documentation](https://www.psycopg.org/docs/)
+[uuid6 Documentation](https://pypi.org/project/uuid6/)
+
+**Tutorials:**
+[Use Cases of XPath Python In Selenium With Examples](https://www.testmuai.com/blog/python-xpath/)
+[Automating an ETL Pipeline with Windows Task Scheduler](https://innerjoin.bit.io/automating-an-etl-pipeline-with-windows-task-scheduler-ef069c63fc35?sharedUserId=ellainejh)
