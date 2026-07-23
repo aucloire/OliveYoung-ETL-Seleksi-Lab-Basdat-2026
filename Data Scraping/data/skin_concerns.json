@@ -1,0 +1,30 @@
+[
+    {
+        "concern_id": "d91366d7-32f2-525e-8f6d-1caf9bfeda22",
+        "concern_name": "Acne"
+    },
+    {
+        "concern_id": "869b6e0a-c4f4-51bc-bf38-27d0405f3c1d",
+        "concern_name": "Blackheads"
+    },
+    {
+        "concern_id": "161aff9a-ad68-55b8-8703-05961bb6347a",
+        "concern_name": "Brightening"
+    },
+    {
+        "concern_id": "fc24c809-b43e-5818-80a9-f49c0cacc1a1",
+        "concern_name": "Moisturising"
+    },
+    {
+        "concern_id": "4e1fa3fa-abf2-5cb0-b73c-95b1d10532d4",
+        "concern_name": "Soothing"
+    },
+    {
+        "concern_id": "f8ad9805-286b-59ab-bbfe-4995f528b979",
+        "concern_name": "Visible Pores"
+    },
+    {
+        "concern_id": "ddd3c370-67d9-5b49-8ae9-cc1ec2d458d5",
+        "concern_name": "Well-aging"
+    }
+]

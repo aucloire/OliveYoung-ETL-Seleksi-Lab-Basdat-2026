@@ -1,0 +1,18 @@
+[
+    {
+        "type_id": "ae39034b-cbf4-5984-87f9-a18f134713e3",
+        "type_name": "Combination&Normal"
+    },
+    {
+        "type_id": "9cb8c505-0a72-54e8-b8d8-56dfb14f1d21",
+        "type_name": "Dry"
+    },
+    {
+        "type_id": "fcb6a131-54c8-572c-b193-9f10afd69618",
+        "type_name": "Oily"
+    },
+    {
+        "type_id": "e44a343b-5911-50e2-8301-9e1bb5ade570",
+        "type_name": "Sensitive"
+    }
+]

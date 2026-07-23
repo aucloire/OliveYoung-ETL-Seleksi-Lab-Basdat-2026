@@ -1,0 +1,23 @@
+[
+    {
+        "sku_id": "019f8e88-f2bc-771c-9824-aa5b18a5dced",
+        "product_id": "GA260338900",
+        "original_sku_name": "ROUND LAB Sensitive Skin Calming Routine Set",
+        "original_price": 97.0,
+        "sale_price": 66.39
+    },
+    {
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "product_id": "GA260439734",
+        "original_sku_name": "Anua PDRN Hyaluronic Capsule 100 Serum 30ml Double Set (+Mask Sheet 1ea)",
+        "original_price": 95.96,
+        "sale_price": 46.55
+    },
+    {
+        "sku_id": "019f8e89-9cbb-7eec-9dc7-a5a8bd3998e9",
+        "product_id": "GA230217695",
+        "original_sku_name": "[OY Exclusive] AMPLE:N Ceramide Shot Ampoule 100mL Special Set (100mL + 10mL)",
+        "original_price": 22.0,
+        "sale_price": 19.78
+    }
+]

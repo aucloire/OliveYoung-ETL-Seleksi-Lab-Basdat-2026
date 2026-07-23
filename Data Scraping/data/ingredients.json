@@ -1,0 +1,686 @@
+[
+    {
+        "ingredient_id": "019f8e89-5491-7c75-8965-2601f6b999f9",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Serum",
+        "ingredient_name": "Water"
+    },
+    {
+        "ingredient_id": "019f8e89-5492-7640-a313-c6d894c5cf3e",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Serum",
+        "ingredient_name": "Butylene Glycol"
+    },
+    {
+        "ingredient_id": "019f8e89-5493-7b74-b4cc-bbac391fcf56",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Serum",
+        "ingredient_name": "Propanediol"
+    },
+    {
+        "ingredient_id": "019f8e89-5494-765f-9861-1ac8bcad97ce",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Serum",
+        "ingredient_name": "Glycerin"
+    },
+    {
+        "ingredient_id": "019f8e89-5495-769c-bf00-e50b43aa6492",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Serum",
+        "ingredient_name": "Hydrolyzed Hyaluronic Acid"
+    },
+    {
+        "ingredient_id": "019f8e89-5496-70d1-9ef9-a072e5f188a0",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Serum",
+        "ingredient_name": "1,2-Hexanediol"
+    },
+    {
+        "ingredient_id": "019f8e89-5497-73a2-8905-52c9d3a243f5",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Serum",
+        "ingredient_name": "Niacinamide"
+    },
+    {
+        "ingredient_id": "019f8e89-5498-7b86-97af-a5269ba9b51a",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Serum",
+        "ingredient_name": "Glyceryl Oleate"
+    },
+    {
+        "ingredient_id": "019f8e89-5499-7ddc-8704-e43226441598",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Serum",
+        "ingredient_name": "Lauryl Glucoside"
+    },
+    {
+        "ingredient_id": "019f8e89-549a-798a-93c1-8933bbc5651a",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Serum",
+        "ingredient_name": "Myristyl Glucoside"
+    },
+    {
+        "ingredient_id": "019f8e89-549b-7a49-b3c1-6d9dda9f79b0",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Serum",
+        "ingredient_name": "Polyglyceryl-6 Laurate"
+    },
+    {
+        "ingredient_id": "019f8e89-549c-73c9-b364-35c17e41a575",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Serum",
+        "ingredient_name": "Hydrogenated Lecithin"
+    },
+    {
+        "ingredient_id": "019f8e89-549d-72ed-8280-99034720f847",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Serum",
+        "ingredient_name": "Glutathione"
+    },
+    {
+        "ingredient_id": "019f8e89-549e-7083-8689-9cee2c341b39",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Serum",
+        "ingredient_name": "Hydrolyzed Collagen"
+    },
+    {
+        "ingredient_id": "019f8e89-549f-75fe-a954-77caeae59585",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Serum",
+        "ingredient_name": "Sodium Hyaluronate"
+    },
+    {
+        "ingredient_id": "019f8e89-54a0-7db6-863c-74ebd9c71ab3",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Serum",
+        "ingredient_name": "Coptis Japonica Root Extract"
+    },
+    {
+        "ingredient_id": "019f8e89-54a1-773c-8bac-e9ff8a3740b6",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Serum",
+        "ingredient_name": "Adenosine"
+    },
+    {
+        "ingredient_id": "019f8e89-54a2-718f-82ab-a3940fc4e068",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Serum",
+        "ingredient_name": "Sodium DNA"
+    },
+    {
+        "ingredient_id": "019f8e89-54a3-7a4c-8c67-bb1c13a339cb",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Serum",
+        "ingredient_name": "Hyaluronic Acid"
+    },
+    {
+        "ingredient_id": "019f8e89-54a4-7b7d-8888-09d9f1683ef6",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Serum",
+        "ingredient_name": "Hydrolyzed Sodium Hyaluronate"
+    },
+    {
+        "ingredient_id": "019f8e89-54a5-774c-954a-b9961e639600",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Serum",
+        "ingredient_name": "Hydroxypropyltrimonium Hyaluronate"
+    },
+    {
+        "ingredient_id": "019f8e89-54a6-7a0a-a63e-16cfbb1db812",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Serum",
+        "ingredient_name": "Potassium Hyaluronate"
+    },
+    {
+        "ingredient_id": "019f8e89-54a7-79ef-8a51-22d9cf0b5bfb",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Serum",
+        "ingredient_name": "Sodium Hyaluronate Crosspolymer"
+    },
+    {
+        "ingredient_id": "019f8e89-54a8-70bb-9474-3756f1b0bf3f",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Serum",
+        "ingredient_name": "Sodium Acetylated Hyaluronate"
+    },
+    {
+        "ingredient_id": "019f8e89-54a9-7076-8dad-5a4ffae092ba",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Serum",
+        "ingredient_name": "Melia Azadirachta Leaf Extract"
+    },
+    {
+        "ingredient_id": "019f8e89-54aa-7693-a351-06646af25332",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Serum",
+        "ingredient_name": "Melia Azadirachta Flower Extract"
+    },
+    {
+        "ingredient_id": "019f8e89-54ab-78be-afb1-291b379cc8ce",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Serum",
+        "ingredient_name": "Coccinia Indica Fruit Extract"
+    },
+    {
+        "ingredient_id": "019f8e89-54ac-7637-8b74-a52079053971",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Serum",
+        "ingredient_name": "Solanum Melongena (Eggplant) Fruit Extract"
+    },
+    {
+        "ingredient_id": "019f8e89-54ad-7af6-8565-1d290d918c2e",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Serum",
+        "ingredient_name": "Ocimum Sanctum Leaf Extract"
+    },
+    {
+        "ingredient_id": "019f8e89-54ae-79af-bdbc-54e83e717b21",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Serum",
+        "ingredient_name": "Citric Acid"
+    },
+    {
+        "ingredient_id": "019f8e89-54af-7dc1-8485-690270878d46",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Serum",
+        "ingredient_name": "Curcuma Longa (Turmeric) Root Extract"
+    },
+    {
+        "ingredient_id": "019f8e89-54b0-7afb-9f03-5b7ede4e7e9b",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Serum",
+        "ingredient_name": "Corallina Officinalis Extract"
+    },
+    {
+        "ingredient_id": "019f8e89-54b1-7481-9df0-5f6e813bc6b4",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Serum",
+        "ingredient_name": "Sodium Citrate"
+    },
+    {
+        "ingredient_id": "019f8e89-54b2-729a-a07a-32659691d6a9",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Serum",
+        "ingredient_name": "Pentylene Glycol"
+    },
+    {
+        "ingredient_id": "019f8e89-54b3-735b-bb0c-28e3fb1e36c8",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Mask",
+        "ingredient_name": "Water"
+    },
+    {
+        "ingredient_id": "019f8e89-54b4-7bcf-9d10-7561da1315e5",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Mask",
+        "ingredient_name": "Butylene Glycol"
+    },
+    {
+        "ingredient_id": "019f8e89-54b5-7e78-89e5-2d615e1ad046",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Mask",
+        "ingredient_name": "Glycerin"
+    },
+    {
+        "ingredient_id": "019f8e89-54b6-796e-9748-0aec6e071821",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Mask",
+        "ingredient_name": "Niacinamide"
+    },
+    {
+        "ingredient_id": "019f8e89-54b7-7098-82f4-f5451efc84a1",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Mask",
+        "ingredient_name": "1,2-Hexanediol"
+    },
+    {
+        "ingredient_id": "019f8e89-54b8-7f97-93ea-e6fc0fd8c876",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Mask",
+        "ingredient_name": "Isopentyldiol"
+    },
+    {
+        "ingredient_id": "019f8e89-54b9-7171-808b-bb24cdb5396d",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Mask",
+        "ingredient_name": "Trehalose"
+    },
+    {
+        "ingredient_id": "019f8e89-54ba-7ca4-8717-48434d657dda",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Mask",
+        "ingredient_name": "Carbomer"
+    },
+    {
+        "ingredient_id": "019f8e89-54bb-71bb-8b33-865cc56666d2",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Mask",
+        "ingredient_name": "Arginine"
+    },
+    {
+        "ingredient_id": "019f8e89-54bc-7763-bf3c-12c73f274bae",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Mask",
+        "ingredient_name": "Propanediol"
+    },
+    {
+        "ingredient_id": "019f8e89-54bd-7eb0-aa93-9350be8113ad",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Mask",
+        "ingredient_name": "Allantoin"
+    },
+    {
+        "ingredient_id": "019f8e89-54be-727e-bae4-6b9e66753d5a",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Mask",
+        "ingredient_name": "Panthenol"
+    },
+    {
+        "ingredient_id": "019f8e89-54bf-7a59-aa28-b4da4a21e0fd",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Mask",
+        "ingredient_name": "Ethylhexylglycerin"
+    },
+    {
+        "ingredient_id": "019f8e89-54c0-77c6-b84c-bd038468651e",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Mask",
+        "ingredient_name": "Polyglyceryl-10 Laurate"
+    },
+    {
+        "ingredient_id": "019f8e89-54c1-7a5d-b476-a26fd3487f4a",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Mask",
+        "ingredient_name": "Xanthan Gum"
+    },
+    {
+        "ingredient_id": "019f8e89-54c2-793f-a332-905bfb915fb2",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Mask",
+        "ingredient_name": "Adenosine"
+    },
+    {
+        "ingredient_id": "019f8e89-54c3-7d56-8f6a-924132e38dfe",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Mask",
+        "ingredient_name": "Melia Azadirachta Leaf Extract"
+    },
+    {
+        "ingredient_id": "019f8e89-54c4-7961-b99d-53a2d43e7597",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Mask",
+        "ingredient_name": "Sodium DNA (100ppm)"
+    },
+    {
+        "ingredient_id": "019f8e89-54c5-7f9e-8e78-125fdba4d6eb",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Mask",
+        "ingredient_name": "Hydrolyzed Hyaluronic Acid (2.9ppm)"
+    },
+    {
+        "ingredient_id": "019f8e89-54c6-7b6d-a28b-b6b3636256c7",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Mask",
+        "ingredient_name": "Melia Azadirachta Flower Extract"
+    },
+    {
+        "ingredient_id": "019f8e89-54c7-73df-9e3c-d1fe12e9438a",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Mask",
+        "ingredient_name": "Disodium EDTA"
+    },
+    {
+        "ingredient_id": "019f8e89-54c8-70ba-be08-a8aaa7691f47",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Mask",
+        "ingredient_name": "Glyceryl Acrylate/Acrylic Acid Copolymer"
+    },
+    {
+        "ingredient_id": "019f8e89-54c9-7bd4-9977-505c57846fd5",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Mask",
+        "ingredient_name": "Coccinia Indica Fruit Extract"
+    },
+    {
+        "ingredient_id": "019f8e89-54ca-7cf2-bd45-f78cd6433954",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Mask",
+        "ingredient_name": "Solanum Melongena (Eggplant) Fruit Extract"
+    },
+    {
+        "ingredient_id": "019f8e89-54cb-786e-a5e7-e87cd2f2f5d5",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Mask",
+        "ingredient_name": "Glyceryl Oleate"
+    },
+    {
+        "ingredient_id": "019f8e89-54cc-72cd-856f-82764456488d",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Mask",
+        "ingredient_name": "Lauryl Glucoside"
+    },
+    {
+        "ingredient_id": "019f8e89-54cd-7fb1-8c87-131d47d3d4fc",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Mask",
+        "ingredient_name": "Myristyl Glucoside"
+    },
+    {
+        "ingredient_id": "019f8e89-54ce-7ff1-a6d1-aab7ce52d34e",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Mask",
+        "ingredient_name": "Polyglyceryl-6 Laurate"
+    },
+    {
+        "ingredient_id": "019f8e89-54cf-7847-be5e-7bc72d612a65",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Mask",
+        "ingredient_name": "Hydrogenated Lecithin"
+    },
+    {
+        "ingredient_id": "019f8e89-54d0-79d5-82c6-aabaf990974f",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Mask",
+        "ingredient_name": "Ocimum Sanctum Leaf Extract"
+    },
+    {
+        "ingredient_id": "019f8e89-54d1-7628-8b0d-db8d345c4697",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Mask",
+        "ingredient_name": "Hydrolyzed Collagen"
+    },
+    {
+        "ingredient_id": "019f8e89-54d2-72d8-9a1e-f91e947c3a8c",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Mask",
+        "ingredient_name": "Sodium Hyaluronate (80ppb)"
+    },
+    {
+        "ingredient_id": "019f8e89-54d3-789e-9a47-c12735dae44a",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Mask",
+        "ingredient_name": "Curcuma Longa (Turmeric) Root Extract"
+    },
+    {
+        "ingredient_id": "019f8e89-54d4-725c-b58f-6e9618de8409",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Mask",
+        "ingredient_name": "Corallina Officinalis Extract"
+    },
+    {
+        "ingredient_id": "019f8e89-54d5-7eef-b795-29d5b9531b37",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Mask",
+        "ingredient_name": "Coptis Japonica Root Extract"
+    },
+    {
+        "ingredient_id": "019f8e89-54d6-7f6a-a5b2-79b312cec23f",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Mask",
+        "ingredient_name": "Glutathione"
+    },
+    {
+        "ingredient_id": "019f8e89-54d7-7f78-83a9-fc1719547f61",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Mask",
+        "ingredient_name": "Hyaluronic Acid (3ppb)"
+    },
+    {
+        "ingredient_id": "019f8e89-54d8-765f-8172-cc379328e78d",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Mask",
+        "ingredient_name": "Hydrolyzed Sodium Hyaluronate (3ppb)"
+    },
+    {
+        "ingredient_id": "019f8e89-54d9-7fb6-9f54-4351f1e12a48",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Mask",
+        "ingredient_name": "Hydroxypropyltrimonium Hyaluronate (3ppb)"
+    },
+    {
+        "ingredient_id": "019f8e89-54da-7fff-b5be-dc9ce42555f3",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Mask",
+        "ingredient_name": "Potassium Hyaluronate (3ppb)"
+    },
+    {
+        "ingredient_id": "019f8e89-54db-7e4c-a0f4-308967db0487",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Mask",
+        "ingredient_name": "Sodium Hyaluronate Crosspolymer (3ppb)"
+    },
+    {
+        "ingredient_id": "019f8e89-54dc-7bcb-8efc-2e7e5d9e37fd",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Mask",
+        "ingredient_name": "Citric Acid"
+    },
+    {
+        "ingredient_id": "019f8e89-54dd-7b40-975b-9612eab203e5",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Mask",
+        "ingredient_name": "Sodium Citrate"
+    },
+    {
+        "ingredient_id": "019f8e89-54de-7e09-977a-b9a17cd16dfe",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Mask",
+        "ingredient_name": "Pentylene Glycol"
+    },
+    {
+        "ingredient_id": "019f8e89-54df-7f62-9e67-a89a84c66583",
+        "sku_id": "019f8e89-47c1-784b-b1d0-7bbb3407733e",
+        "liquid_variant": "Mask",
+        "ingredient_name": "Sodium Acetylated Hyaluronate (0.1ppb)"
+    },
+    {
+        "ingredient_id": "019f8e89-a94c-7d80-a869-6d9bff8a37e7",
+        "sku_id": "019f8e89-9cbb-7eec-9dc7-a5a8bd3998e9",
+        "liquid_variant": "Single Product",
+        "ingredient_name": "Water"
+    },
+    {
+        "ingredient_id": "019f8e89-a94d-7aab-9dc9-01043a0a6a22",
+        "sku_id": "019f8e89-9cbb-7eec-9dc7-a5a8bd3998e9",
+        "liquid_variant": "Single Product",
+        "ingredient_name": "Butylene Glycol"
+    },
+    {
+        "ingredient_id": "019f8e89-a94e-7e92-bf70-17e1cabd90ee",
+        "sku_id": "019f8e89-9cbb-7eec-9dc7-a5a8bd3998e9",
+        "liquid_variant": "Single Product",
+        "ingredient_name": "Glycerin"
+    },
+    {
+        "ingredient_id": "019f8e89-a94f-7e7f-b44a-abf4688372de",
+        "sku_id": "019f8e89-9cbb-7eec-9dc7-a5a8bd3998e9",
+        "liquid_variant": "Single Product",
+        "ingredient_name": "Propanediol"
+    },
+    {
+        "ingredient_id": "019f8e89-a950-7fdf-8c5a-cf339ed23caa",
+        "sku_id": "019f8e89-9cbb-7eec-9dc7-a5a8bd3998e9",
+        "liquid_variant": "Single Product",
+        "ingredient_name": "Diglycerin"
+    },
+    {
+        "ingredient_id": "019f8e89-a951-7849-95c9-ebaca0ef672f",
+        "sku_id": "019f8e89-9cbb-7eec-9dc7-a5a8bd3998e9",
+        "liquid_variant": "Single Product",
+        "ingredient_name": "Beta-Glucan"
+    },
+    {
+        "ingredient_id": "019f8e89-a952-7c84-a78e-32e5f6429863",
+        "sku_id": "019f8e89-9cbb-7eec-9dc7-a5a8bd3998e9",
+        "liquid_variant": "Single Product",
+        "ingredient_name": "1,2-Hexanediol"
+    },
+    {
+        "ingredient_id": "019f8e89-a953-75f2-a832-63da3f1e9a53",
+        "sku_id": "019f8e89-9cbb-7eec-9dc7-a5a8bd3998e9",
+        "liquid_variant": "Single Product",
+        "ingredient_name": "Niacinamide"
+    },
+    {
+        "ingredient_id": "019f8e89-a954-7575-b20e-527957bd7e8f",
+        "sku_id": "019f8e89-9cbb-7eec-9dc7-a5a8bd3998e9",
+        "liquid_variant": "Single Product",
+        "ingredient_name": "Betaine"
+    },
+    {
+        "ingredient_id": "019f8e89-a955-7e7f-a3db-e198e3b54ef7",
+        "sku_id": "019f8e89-9cbb-7eec-9dc7-a5a8bd3998e9",
+        "liquid_variant": "Single Product",
+        "ingredient_name": "Methyl Gluceth-20"
+    },
+    {
+        "ingredient_id": "019f8e89-a956-7ae8-9da0-5f4d1e715680",
+        "sku_id": "019f8e89-9cbb-7eec-9dc7-a5a8bd3998e9",
+        "liquid_variant": "Single Product",
+        "ingredient_name": "Trehalose"
+    },
+    {
+        "ingredient_id": "019f8e89-a957-71db-b6dd-e5cbe7f6e369",
+        "sku_id": "019f8e89-9cbb-7eec-9dc7-a5a8bd3998e9",
+        "liquid_variant": "Single Product",
+        "ingredient_name": "Octyldodecanol"
+    },
+    {
+        "ingredient_id": "019f8e89-a958-7b4f-90a1-38b82dbec5c5",
+        "sku_id": "019f8e89-9cbb-7eec-9dc7-a5a8bd3998e9",
+        "liquid_variant": "Single Product",
+        "ingredient_name": "Adenosine"
+    },
+    {
+        "ingredient_id": "019f8e89-a959-7f67-b4c2-6f17eabf5715",
+        "sku_id": "019f8e89-9cbb-7eec-9dc7-a5a8bd3998e9",
+        "liquid_variant": "Single Product",
+        "ingredient_name": "Forsythia Suspensa Fruit Extract"
+    },
+    {
+        "ingredient_id": "019f8e89-a95a-73bd-b07f-a5377077a489",
+        "sku_id": "019f8e89-9cbb-7eec-9dc7-a5a8bd3998e9",
+        "liquid_variant": "Single Product",
+        "ingredient_name": "Hydrogenated Lecithin"
+    },
+    {
+        "ingredient_id": "019f8e89-a95b-77ab-8c9f-5995efa8a429",
+        "sku_id": "019f8e89-9cbb-7eec-9dc7-a5a8bd3998e9",
+        "liquid_variant": "Single Product",
+        "ingredient_name": "Ceramide 3"
+    },
+    {
+        "ingredient_id": "019f8e89-a95c-73bc-b33f-3c05dd6e84cb",
+        "sku_id": "019f8e89-9cbb-7eec-9dc7-a5a8bd3998e9",
+        "liquid_variant": "Single Product",
+        "ingredient_name": "Arginine"
+    },
+    {
+        "ingredient_id": "019f8e89-a95d-7c72-9722-909ed9364850",
+        "sku_id": "019f8e89-9cbb-7eec-9dc7-a5a8bd3998e9",
+        "liquid_variant": "Single Product",
+        "ingredient_name": "Allantoin"
+    },
+    {
+        "ingredient_id": "019f8e89-a95e-7efc-921c-9ec684cfc9d6",
+        "sku_id": "019f8e89-9cbb-7eec-9dc7-a5a8bd3998e9",
+        "liquid_variant": "Single Product",
+        "ingredient_name": "Brassica Campestris (Rapeseed) Sterols"
+    },
+    {
+        "ingredient_id": "019f8e89-a95f-70eb-bd5d-3b815c6853c3",
+        "sku_id": "019f8e89-9cbb-7eec-9dc7-a5a8bd3998e9",
+        "liquid_variant": "Single Product",
+        "ingredient_name": "Cholesterol"
+    },
+    {
+        "ingredient_id": "019f8e89-a960-7cc9-a528-7d3b85e07954",
+        "sku_id": "019f8e89-9cbb-7eec-9dc7-a5a8bd3998e9",
+        "liquid_variant": "Single Product",
+        "ingredient_name": "Ceramide 2"
+    },
+    {
+        "ingredient_id": "019f8e89-a961-79be-b34d-fcd61c4d06f9",
+        "sku_id": "019f8e89-9cbb-7eec-9dc7-a5a8bd3998e9",
+        "liquid_variant": "Single Product",
+        "ingredient_name": "Ceramide 1"
+    },
+    {
+        "ingredient_id": "019f8e89-a962-7ef7-8ab0-73afacfc2521",
+        "sku_id": "019f8e89-9cbb-7eec-9dc7-a5a8bd3998e9",
+        "liquid_variant": "Single Product",
+        "ingredient_name": "Xylitylglucoside"
+    },
+    {
+        "ingredient_id": "019f8e89-a963-70e6-871f-78bba8a0d806",
+        "sku_id": "019f8e89-9cbb-7eec-9dc7-a5a8bd3998e9",
+        "liquid_variant": "Single Product",
+        "ingredient_name": "Hydroxyethyl Acrylate/Sodium Acryloyldimethyl Taurate Copolymer"
+    },
+    {
+        "ingredient_id": "019f8e89-a964-7bdf-a2eb-04bac039bca6",
+        "sku_id": "019f8e89-9cbb-7eec-9dc7-a5a8bd3998e9",
+        "liquid_variant": "Single Product",
+        "ingredient_name": "Anhydroxylitol"
+    },
+    {
+        "ingredient_id": "019f8e89-a965-7512-9f88-f03dfd7ab854",
+        "sku_id": "019f8e89-9cbb-7eec-9dc7-a5a8bd3998e9",
+        "liquid_variant": "Single Product",
+        "ingredient_name": "Xanthan Gum"
+    },
+    {
+        "ingredient_id": "019f8e89-a966-76d6-82cc-a1eed45cc979",
+        "sku_id": "019f8e89-9cbb-7eec-9dc7-a5a8bd3998e9",
+        "liquid_variant": "Single Product",
+        "ingredient_name": "Carbomer"
+    },
+    {
+        "ingredient_id": "019f8e89-a967-7621-a947-ee274eb78a30",
+        "sku_id": "019f8e89-9cbb-7eec-9dc7-a5a8bd3998e9",
+        "liquid_variant": "Single Product",
+        "ingredient_name": "Xylitol"
+    },
+    {
+        "ingredient_id": "019f8e89-a968-7feb-bd8c-deb5218947f5",
+        "sku_id": "019f8e89-9cbb-7eec-9dc7-a5a8bd3998e9",
+        "liquid_variant": "Single Product",
+        "ingredient_name": "Caprylyl Glycol"
+    },
+    {
+        "ingredient_id": "019f8e89-a969-77a0-8f40-5d3cee57c9e0",
+        "sku_id": "019f8e89-9cbb-7eec-9dc7-a5a8bd3998e9",
+        "liquid_variant": "Single Product",
+        "ingredient_name": "Macadamia Ternifolia Seed Oil"
+    },
+    {
+        "ingredient_id": "019f8e89-a96a-7902-8d71-c1cef4a1bce7",
+        "sku_id": "019f8e89-9cbb-7eec-9dc7-a5a8bd3998e9",
+        "liquid_variant": "Single Product",
+        "ingredient_name": "Caprylic/Capric Triglyceride"
+    },
+    {
+        "ingredient_id": "019f8e89-a96b-7b34-915a-1e070faafde7",
+        "sku_id": "019f8e89-9cbb-7eec-9dc7-a5a8bd3998e9",
+        "liquid_variant": "Single Product",
+        "ingredient_name": "Phytosteryl/Behenyl/Octyldodecyl Lauroyl Glutamate"
+    },
+    {
+        "ingredient_id": "019f8e89-a96c-7937-9f08-1da3d5de95cd",
+        "sku_id": "019f8e89-9cbb-7eec-9dc7-a5a8bd3998e9",
+        "liquid_variant": "Single Product",
+        "ingredient_name": "Polyglyceryl-10 Oleate"
+    },
+    {
+        "ingredient_id": "019f8e89-a96d-7ff0-964f-496a893e79e2",
+        "sku_id": "019f8e89-9cbb-7eec-9dc7-a5a8bd3998e9",
+        "liquid_variant": "Single Product",
+        "ingredient_name": "Cetyl Phosphate"
+    },
+    {
+        "ingredient_id": "019f8e89-a96e-72cf-8718-e89116ec81c0",
+        "sku_id": "019f8e89-9cbb-7eec-9dc7-a5a8bd3998e9",
+        "liquid_variant": "Single Product",
+        "ingredient_name": "Disodium EDTA"
+    }
+]
