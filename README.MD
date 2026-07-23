@@ -21,6 +21,13 @@ Berdasarkan *website* tersebut, didapatkan sejumlah data yang berkaitan dengan p
 
 *Website* Olive Young Global dipilih dalam proyek ETL ini karena ketertarikan author terhadap *K-Beauty*, terutama *skincare*. Data-data yang diperoleh dari Olive Young Gloval dapat memberikan informasi tambahan terkait komposisi yang umumnya digunakan untuk suatu kondisi kulit pada kategori *skincare* tertentu.
 
+*Project* ini dibatasi agar tidak melakukan scraping terhadap seluruh katalog pada Olive Young Global. *Scraping* dilakukan dengan *filtering* untuk mendapatkan produk sesuai dengan kategorinya.
+- **Skincare Category**: Moisturizers (Toner, Essence & Serum, Cream), Cleansers (Cleansing Foams)
+- **Skin Concern**: Acne, Blackheads, Brightening, Moisturising, Soothing, Visible Pores, Well-aging
+- **Skin Types**: Combination&Normal, Dry, Oily, Sensitive
+
+Selain itu, *scraper* dibatasi pada maksimal 72 produk untuk setiap filter.
+
 <br>
 
 ## Cara Menggunakan Scraper
@@ -282,7 +289,7 @@ Setiap kali *scheduler* berjalan, sistem secara otomatis membuat *file log* berb
 Bonus ini dikerjakan dengan terlebih dahulu menentukan 3 informasi yang ingin didapatkan dari `oliveyoung_db`. Selanjutnya, dilakukan `EXPLAIN ANALYZE` terhadap query yang dihasilkan untuk kemudian menganalisis hal-hal yang perlu dioptimasi.
 
 #### 1. Informasi 1: Analisis Produk Hypoallergenic
-Query ini bertujuan untuk mencari daftar nama skincare kategori **Cream** yang cocok untuk tipe kulit **Sensitif** dengan memastikan bahwa skincare tersebut bebas dari komposisi pemicu iritasi, biasanya *fragrance* atau *alcohol*.
+Query ini bertujuan untuk mencari daftar nama skincare kategori **Cream** yang hypoallergenic dengan memastikan bahwa skincare tersebut bebas dari komposisi pemicu iritasi, biasanya *fragrance* atau *alcohol*.
 
 Sebelum:
 ![Sebelum](<Query Optimasi/screenshot/informasi1-explainanalyze-before.png>)
