@@ -56,7 +56,7 @@ class OliveYoungSkincareScraper:
     def _init_driver(self) -> webdriver.Chrome:
         options = Options()
         options.page_load_strategy = 'eager'
-        # options.add_argument('--headless=new') # hanya diaktifkan apabila tidak ingin menampilkan window chromedriver
+        options.add_argument('--headless=new')
         options.add_argument('--no-sandbox')
         options.add_argument('--disable-dev-shm-usage')
         options.add_argument('--disable-gpu')
@@ -339,19 +339,19 @@ class OliveYoungSkincareScraper:
         
         categories_map = {
             "Toner": {
-                "parent": "/html/body/div[6]/div/div/div[1]/div[2]/div[3]/div[2]/ul/li[1]", # Moisturizers
+                "parent": "/html/body/div[6]/div/div/div[1]/div[2]/div[3]/div[2]/ul/li[1]",
                 "xpath": "/html/body/div[6]/div/div/div[1]/div[2]/div[3]/div[2]/ul/li[1]/ul/li[1]"
             },
             "Essence & Serum": {
-                "parent": "/html/body/div[6]/div/div/div[1]/div[2]/div[3]/div[2]/ul/li[1]", # Moisturizers
+                "parent": "/html/body/div[6]/div/div/div[1]/div[2]/div[3]/div[2]/ul/li[1]",
                 "xpath": "/html/body/div[6]/div/div/div[1]/div[2]/div[3]/div[2]/ul/li[1]/ul/li[3]"
             },
             "Cream": {
-                "parent": "/html/body/div[6]/div/div/div[1]/div[2]/div[3]/div[2]/ul/li[1]", # Moisturizers
+                "parent": "/html/body/div[6]/div/div/div[1]/div[2]/div[3]/div[2]/ul/li[1]",
                 "xpath": "/html/body/div[6]/div/div/div[1]/div[2]/div[3]/div[2]/ul/li[1]/ul/li[4]"
             },
             "Cleansing Foams": {
-                "parent": "/html/body/div[6]/div/div/div[1]/div[2]/div[3]/div[2]/ul/li[2]", # Cleansers
+                "parent": "/html/body/div[6]/div/div/div[1]/div[2]/div[3]/div[2]/ul/li[2]",
                 "xpath": "/html/body/div[6]/div/div/div[1]/div[2]/div[3]/div[2]/ul/li[2]/ul/li[1]"
             }
         }
@@ -397,10 +397,6 @@ class OliveYoungSkincareScraper:
         print(f"\n⚙️ Memulai ekstraksi metadata: {total_products} PRODUK DITEMUKAN")
         
         for index, url in enumerate(self.unique_product_urls, start=1):
-            if index > 3:
-                print("⚠️ [TEST MODE] Membatasi ekstraksi hanya 3 produk untuk keperluan screenshot scheduling.")
-                break
-            
             print(f"[{index}/{total_products}] Memproses: {url}")
             self.driver.get(url)
             self._close_ad_popup()
