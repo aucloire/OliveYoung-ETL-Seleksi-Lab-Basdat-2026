@@ -36,9 +36,15 @@ DB_PASS=password_postgres_kamu
 ```
 
 ### Langkah Eksekusi
-1. Lakukan *clone* terhadap repositori ini dengan command `git clone <link repository ini>`.
+1. Lakukan *clone* terhadap repositori ini dengan command:
+```
+git clone https://github.com/aucloire/OliveYoung-ETL-Seleksi-Lab-Basdat-2026.git
+```
 2. Buka terminal dan arahkan *directory* ke dalam folder `Data Scraping/src`.
-3. Jalankan *script scraper* dengan *command* `python scraper.py`.
+3. Jalankan *script scraper* dengan *command*: 
+```
+python scraper.py
+```
 4. Tunggu hingga proses *scraping* selesai. *Script* akan otomatis melakukan *preprocessing* dan memecah data ke beberapa JSON.
 5. Untuk memasukkan data ke dalam *database*, jalankan *script* `loader.py` pada folder `Data Storing/src`.
 
@@ -222,6 +228,7 @@ Tabel dengan relasi *many-to-many* dari oliveyoung_db, seperti Categories, Skin_
     ORDER BY average_sale_price DESC
     LIMIT 3;
 ```
+![Hasil Query 1](<Data Warehouse/screenshot/query-analitik-1.png>)
 
 2. Analisis Brand vs Diskon
 ```
@@ -238,6 +245,7 @@ Tabel dengan relasi *many-to-many* dari oliveyoung_db, seperti Categories, Skin_
     HAVING COUNT(f.sku_id) > 5
     ORDER BY discount_strategy_rank;
 ```
+![Hasil Query 2](<Data Warehouse/screenshot/query-analitik-2.png>)
 
 ### Bonus 2: Automated Scheduling
 *Automated scheduling* diimpplementasikan menggunakan OS Scheduler, seperti Task Scheduler pada Windows, yang menjalankan *wrapper script* `run_etl.bat` setiap hari pada jam tertentu. Sistem ini mengamankan *idempotency* menggunakan klausa ON CONFLICT pada metode `_bulk_insert()` di PostgreSQL untuk memastikan tidak ada redundansi data. Perbedaan antarsiklus dapat dilihat dari kolom `batch_timestamp` di tabel `Products`
@@ -249,8 +257,8 @@ oliveyoung_db=# select product_id, clean_name, brand, batch_timestamp from produ
 | GA230217695 | AMPLE:N Ceramide Shot Ampoule | AMPLE:N | 2026-07-23 17:33:31 |
 | GA260439734 | Anua PDRN Hyaluronic Capsule 100 Serum | Anua | 2026-07-23 17:33:09 |
 | GA260338900 | ROUND LAB Sensitive Skin Calming Routine | ROUND LAB | 2026-07-23 17:32:47 |
-| GA260136963 |  makeprem Inteca For Men Soothing All-In-One | makeprem | 2026-07-23 12:36:05.651349 |
-| GA250832687 | Arencia Holy Hyssop Serum 30 | Arencia | 2026-07-23 12:36:05.651349 |
+| GA260136963 |  makeprem Inteca For Men Soothing All-In-One | makeprem | 2026-07-23 12:36:05 |
+| GA250832687 | Arencia Holy Hyssop Serum 30 | Arencia | 2026-07-23 12:36:05 |
 
 Setiap kali *scheduler* berjalan, sistem secara otomatis membuat *file log* berbasis *timestamp* yang bisa dilihat di *directory* `logs/` dengan format `etl_pipeline_YYYYMMDD_HHMMSS.log`. *File* tersebut merekam seluruh proses ETL *pipeline*, mulai dari *scraping*, pemuatan data OLTP, hingga pembaruan *Data Warehouse* (OLAP) untuk memudahkan proses *debugging* dan audit.
 
